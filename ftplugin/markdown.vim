@@ -742,7 +742,7 @@ endif
 
 function! s:VersionAwareNetrwBrowseX(url)
     if has('patch-7.4.567')
-        call netrw#BrowseX(a:url, 0)
+        call netrw#BrowseX(a:url)
     else
         call netrw#NetrwBrowseX(a:url, 0)
     endif
